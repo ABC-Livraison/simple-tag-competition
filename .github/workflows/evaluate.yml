@@ -143,9 +143,9 @@ jobs:
           cp -r results/* /tmp/evaluation_results/ || true
           cp docs/index.html /tmp/index.html || true
           
-          # Checkout main branch
+          # Checkout main branch (force to overwrite any conflicts)
           git fetch origin main
-          git checkout main
+          git checkout -f main
           
           # Copy generated files back
           cp -r /tmp/evaluation_results/* results/
