@@ -29,9 +29,9 @@ class StudentAgent:
     
     def _load_model(self):
         model_paths = [
-            "predator_model.pth",
             "submissions/amaillal/predator_model.pth",
-            "submissions/amaillal/ppo_predator_best.pth"
+            "submission_repo/submissions/amaillal/predator_model.pth",
+            "submission_repo/submissions/amaillal/ppo_predator_best.pth"
         ]
         
         for model_path in model_paths:
